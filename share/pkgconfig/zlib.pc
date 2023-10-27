@@ -1,0 +1,13 @@
+prefix=/root/.jenkins/workspace/third_party/oss/install/zlib
+exec_prefix=/root/.jenkins/workspace/third_party/oss/install/zlib
+libdir=/root/.jenkins/workspace/third_party/oss/install/zlib/lib
+sharedlibdir=/root/.jenkins/workspace/third_party/oss/install/zlib/lib
+includedir=/root/.jenkins/workspace/third_party/oss/install/zlib/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
